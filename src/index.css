@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply font-font;
+}
+
+body {
+  background: url("./assets/bg-tablet-pattern.svg") no-repeat top -150px right -150px;
+}
+
+.about {
+  background: url("./assets/bg-tablet-pattern.svg") no-repeat bottom 0% left -450px;
+}
+P {
+  @apply text-neutral-blue;
+}
+
+.btn-red {
+  @apply bg-primary-red text-white py-2 px-4 rounded-3xl font-[500];
+}
+
+.btn-white {
+  @apply bg-white text-primary-red py-2 px-4 rounded-3xl font-[500];
+}
+
+li {
+  @apply hover:text-neutral-blue font-[500] text-primary-blue;
+}
+
+.footer-list li {
+  @apply text-white font-[300] cursor-pointer hover:text-neutral-blue;
+}
+
+.about-title {
+  @apply font-bold text-primary-blue;
+}
