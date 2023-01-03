@@ -3,7 +3,7 @@ import avatar from "../assets/avatar-ali.png";
 
 const Testimonials = () => {
   return (
-    <section className="w-10/12 mx-auto py-36">
+    <section className="mx-auto py-[20px] mb-20">
       <div>
         <h2 className="text-primary-blue text-center pb-7 text-3xl font-bold">
           What they've said ?

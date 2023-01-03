@@ -9,9 +9,9 @@ import youtube from "../assets/icon-youtube.svg";
 const SecondFooter = () => {
   return (
     <div className="bg-neutral-dark-blue py-10">
-      <div className="mx-auto w-10/12 flex justify-between">
+      <div className="mx-auto w-10/12 gap-10 flex flex-col-reverse md:flex-row justify-between">
         <div className=" flex flex-col justify-between">
-          <img src={manage} alt="manage" />
+          <img src={manage} alt="manage" className="hidden md:block" />
           <ul className="flex justify-between">
             <li className="cursor-pointer">
               <img src={facebook} alt="facebook" />
@@ -31,7 +31,7 @@ const SecondFooter = () => {
           </ul>
         </div>
         {/*  */}
-        <div className="footer-list flex gap-24 justify-between">
+        <div className="footer-list flex lg:gap-24 leading-[40px] justify-between">
           <ul>
             <li>Home</li>
             <li>Pricing</li>
@@ -47,7 +47,7 @@ const SecondFooter = () => {
 
         {/*  */}
         <div>
-          <form>
+          <form className="flex">
             <input
               type="text"
               name="footer-text"
