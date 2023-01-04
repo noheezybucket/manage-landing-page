@@ -9,10 +9,11 @@ import youtube from "../assets/icon-youtube.svg";
 const SecondFooter = () => {
   return (
     <div className="bg-neutral-dark-blue py-10">
-      <div className="mx-auto w-10/12 gap-10 flex flex-col-reverse md:flex-row justify-between">
-        <div className=" flex flex-col justify-between">
-          <img src={manage} alt="manage" className="hidden md:block" />
-          <ul className="flex justify-between">
+      <div className="mx-auto w-10/12 gap-10 flex flex-col-reverse sm:flex-row justify-between">
+        <div className=" flex flex-col-reverse gap-10 md:flex-col justify-between">
+          <img src={manage} alt="manage" className="" />
+
+          <ul className="flex justify-between gap-1">
             <li className="cursor-pointer">
               <img src={facebook} alt="facebook" />
             </li>
@@ -31,7 +32,7 @@ const SecondFooter = () => {
           </ul>
         </div>
         {/*  */}
-        <div className="footer-list flex lg:gap-24 leading-[40px] justify-between">
+        <div className="footer-list flex sm:gap-10 leading-[40px] justify-between">
           <ul>
             <li>Home</li>
             <li>Pricing</li>
@@ -52,16 +53,19 @@ const SecondFooter = () => {
               type="text"
               name="footer-text"
               placeholder="Updates in your inbox..."
-              className="py-1 px-1 rounded-3xl"
+              className="py-1 px-1 rounded-3xl w-full text-md"
             />
             <input
               type="submit"
               value="Go"
-              className="bg-primary-red h-full ml-4 text-white py-1 px-4 rounded-3xl"
+              className="bg-primary-red h-full ml-1 text-white py-1 px-4 rounded-3xl"
             />
           </form>
         </div>
       </div>
+      <p className="mx-auto w-10/12 pt-6 text-xs text-center md:text-right">
+        Copyright 2020. All Rights Reserved
+      </p>
     </div>
   );
 };

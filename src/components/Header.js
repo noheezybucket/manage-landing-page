@@ -3,7 +3,7 @@ import manage from "../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className=" pt-14">
+    <header className=" pt-14 hidden lg:block">
       <nav className="flex justify-between items-center">
         <div>
           <img src={manage} alt="manage" />

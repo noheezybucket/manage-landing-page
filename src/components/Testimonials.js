@@ -3,13 +3,13 @@ import avatar from "../assets/avatar-ali.png";
 
 const Testimonials = () => {
   return (
-    <section className="mx-auto py-[20px] mb-20">
+    <section className="mx-auto text-center py-[20px] mb-20">
       <div>
         <h2 className="text-primary-blue text-center pb-7 text-3xl font-bold">
           What they've said ?
         </h2>
         <div className="flex">
-          <div className="flex flex-col items-center bg-white">
+          <div className="flex flex-col items-center border w-full gap-3 bg-white">
             <div>
               <img src={avatar} alt="" />
             </div>

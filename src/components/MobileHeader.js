@@ -1,19 +1,49 @@
 import React, { useState } from "react";
 import manage from "../assets/logo.svg";
 import hamburger from "../assets/icon-hamburger.svg";
+import closeBtn from "../assets/icon-close.svg";
 
 const MobileHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const open =
+    "flex flex-col text-center font-bold py-10  bg-white absolute top-20 w-full gap-5 block";
+  const close = "hidden";
 
   return (
-    <header className="pt-10">
+    <header className="pt-10 relative lg:hidden">
       <nav className="flex justify-between">
         <div>
           <img src={manage} alt="manage" />
         </div>
-        <div>
-          <img src={hamburger} alt="hamburger menu" />
+        <div
+          onClick={() => {
+            setIsMenuOpen((prev) => !prev);
+          }}
+        >
+          {isMenuOpen ? (
+            <img src={closeBtn} alt="close menu" />
+          ) : (
+            <img src={hamburger} alt="hamburger menu" />
+          )}
         </div>
+
+        <ul className={isMenuOpen ? open : close}>
+          <li>
+            <a href="###">Pricing</a>
+          </li>
+          <li>
+            <a href="###">Product</a>
+          </li>
+          <li>
+            <a href="###">About Us</a>
+          </li>
+          <li>
+            <a href="###">Careers</a>
+          </li>
+          <li>
+            <a href="###">Community</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

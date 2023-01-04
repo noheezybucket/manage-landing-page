@@ -44,44 +44,42 @@ const About = () => {
           <div className="flex flex-col lg:flex-row gap-5 ">
             <p className="flex items-center bg-neutral-red lg:bg-white lg:items-start">
               <span className="bg-primary-red text-white px-4 py-1 rounded-3xl h-fit">
-                01
+                02
               </span>
               <h3 className="about-title lg:hidden">
-                Track company-wide progress
+                Advanced built-in reports
               </h3>
             </p>
             <div className="py-1">
               <h3 className="about-title hidden lg:block">
-                Track company-wide progress
+                Advanced built-in reports
               </h3>
               <p>
-                See how your day-to-day tasks fit into the wider vision. Go from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture
-                again.
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
               </p>
             </div>
           </div>
 
           {/* 03 */}
           <div className="flex flex-col lg:flex-row gap-5 ">
-            <p className="flex items-center bg-neutral-red lg:bg-white lg:items-start">
+            <p className="flex items-center bg-neutral-red  lg:bg-white lg:items-start">
               <span className="bg-primary-red text-white px-4 py-1 rounded-3xl h-fit">
-                01
+                03
               </span>
               <h3 className="about-title lg:hidden">
-                Track company-wide progress
+                Everything you need in one place
               </h3>
             </p>
             <div className="py-1">
               <h3 className="about-title hidden lg:block">
-                Track company-wide progress
+                Everything you need in one place
               </h3>
               <p>
-                See how your day-to-day tasks fit into the wider vision. Go from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture
-                again.
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
               </p>
             </div>
           </div>

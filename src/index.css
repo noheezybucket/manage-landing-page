@@ -22,7 +22,7 @@ P {
 }
 
 .btn-red {
-  @apply bg-primary-red text-white py-2 px-4 rounded-3xl font-[500];
+  @apply bg-primary-red text-white py-2 px-4 rounded-3xl font-[500] drop-shadow-[0_5px_5px_rgba(242,95,58,0.55)];
 }
 
 .btn-white {
@@ -38,5 +38,5 @@ li {
 }
 
 .about-title {
-  @apply font-bold text-primary-blue;
+  @apply font-bold text-primary-blue text-[16px];
 }
