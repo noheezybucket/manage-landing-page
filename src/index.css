@@ -40,3 +40,11 @@ li {
 .about-title {
   @apply font-bold text-primary-blue text-[16px];
 }
+
+.testimonial-card {
+  @apply flex flex-col items-center bg-neutral-red rounded-xl gap-5 p-5;
+}
+
+.testimonial-card img {
+  @apply border !important;
+}

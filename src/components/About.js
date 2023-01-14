@@ -19,8 +19,8 @@ const About = () => {
         <div className="flex flex-col gap-5">
           {/* 01 */}
           <div className="flex flex-col lg:flex-row gap-5 ">
-            <p className="flex items-center bg-neutral-red lg:bg-white lg:items-start">
-              <span className="bg-primary-red text-white px-4 py-1 rounded-3xl h-fit">
+            <p className="flex items-center bg-neutral-red  rounded-3xl lg:bg-white lg:items-start">
+              <span className="bg-primary-red text-white px-4 py-2 mr-3 rounded-3xl h-fit">
                 01
               </span>
               <h3 className="about-title lg:hidden">
@@ -42,8 +42,8 @@ const About = () => {
 
           {/* 02 */}
           <div className="flex flex-col lg:flex-row gap-5 ">
-            <p className="flex items-center bg-neutral-red lg:bg-white lg:items-start">
-              <span className="bg-primary-red text-white px-4 py-1 rounded-3xl h-fit">
+            <p className="flex items-center bg-neutral-red rounded-3xl lg:bg-white lg:items-start">
+              <span className="bg-primary-red text-white mr-3 px-4 py-2 rounded-3xl h-fit">
                 02
               </span>
               <h3 className="about-title lg:hidden">
@@ -64,8 +64,8 @@ const About = () => {
 
           {/* 03 */}
           <div className="flex flex-col lg:flex-row gap-5 ">
-            <p className="flex items-center bg-neutral-red  lg:bg-white lg:items-start">
-              <span className="bg-primary-red text-white px-4 py-1 rounded-3xl h-fit">
+            <p className="flex items-center bg-neutral-red  rounded-3xl lg:bg-white lg:items-start">
+              <span className="bg-primary-red text-white  mr-3 px-4 py-2 rounded-3xl h-fit">
                 03
               </span>
               <h3 className="about-title lg:hidden">
