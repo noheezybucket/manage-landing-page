@@ -16,6 +16,7 @@ const MobileHeader = () => {
           <img src={manage} alt="manage" />
         </div>
         <div
+          className="cursor-pointer"
           onClick={() => {
             setIsMenuOpen((prev) => !prev);
           }}

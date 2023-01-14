@@ -50,15 +50,16 @@ const SecondFooter = () => {
         <div>
           <form className="flex">
             <input
-              type="text"
+              type="email"
               name="footer-text"
               placeholder="Updates in your inbox..."
-              className="py-1 px-1 rounded-3xl w-full text-md"
+              className="py-2 px-3 rounded-3xl w-full text-md outline-primary-red"
+              required
             />
             <input
               type="submit"
               value="Go"
-              className="bg-primary-red h-full ml-1 text-white py-1 px-4 rounded-3xl"
+              className="bg-primary-red h-full ml-2 text-white py-2 px-4 rounded-3xl cursor-pointer hover:bg-white hover:text-primary-red duration-200 ease-in-out hover:drop-shadow-[0_2px_2px_rgba(242,95,58,0.55)]"
             />
           </form>
         </div>

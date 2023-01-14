@@ -12,21 +12,31 @@
 
 body {
   background: url("./assets/bg-tablet-pattern.svg") no-repeat top -150px right -150px;
+  overflow-x: hidden;
 }
 
 .about {
-  background: url("./assets/bg-tablet-pattern.svg") no-repeat bottom -100% left -500px;
+  background: url("./assets/bg-tablet-pattern.svg") no-repeat bottom -30px left -600px;
 }
+
 P {
   @apply text-neutral-blue;
 }
 
 .btn-red {
-  @apply bg-primary-red text-white py-2 px-4 rounded-3xl font-[500] drop-shadow-[0_5px_5px_rgba(242,95,58,0.55)];
+  @apply ease-in-out duration-200 bg-primary-red text-white py-3 px-6 rounded-3xl font-[500] drop-shadow-[0_5px_5px_rgba(242,95,58,0.55)];
+}
+
+.btn-red:hover {
+  @apply bg-white text-primary-red;
 }
 
 .btn-white {
-  @apply bg-white text-primary-red py-2 px-4 rounded-3xl font-[500];
+  @apply ease-in-out duration-200 bg-white text-primary-red py-3 px-6 rounded-3xl font-[500];
+}
+
+.btn-white:hover {
+  @apply bg-neutral-red;
 }
 
 li {
@@ -41,10 +51,39 @@ li {
   @apply font-bold text-primary-blue text-[16px];
 }
 
-.testimonial-card {
-  @apply flex flex-col items-center bg-neutral-red rounded-xl gap-5 p-5;
+.about-number {
+  @apply bg-primary-red text-white mr-3 px-5 py-1 rounded-3xl h-fit;
 }
 
-.testimonial-card img {
-  @apply border !important;
+.testimonial-card {
+  @apply flex flex-col items-center relative bg-neutral-gray rounded py-14 px-8 mx-3;
+}
+
+.testimonial-img {
+  @apply absolute -top-10 left-1/2 translate-x-[-50%] w-20;
+}
+
+.testimonial-card p {
+  @apply text-[0.9em];
+}
+
+.testimonial-card h3 {
+  @apply mb-5 font-semibold;
+}
+
+/* editing carousel */
+.slick-list {
+  @apply overflow-visible my-0 -mx-10 lg:-mx-20 !important;
+}
+
+.slick-slide > div {
+  @apply my-2 mx-2;
+}
+
+.slick-dots button:before {
+  @apply border-2 border-primary-red  opacity-100 text-transparent rounded-full !important;
+}
+
+.slick-active button::before {
+  @apply text-primary-red  bg-primary-red opacity-100 !important;
 }

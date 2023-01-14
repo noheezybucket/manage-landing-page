@@ -1,71 +1,72 @@
 import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import ali from "../assets/avatar-ali.png";
-import anisha from "../assets/avatar-anisha.png";
-import richard from "../assets/avatar-richard.png";
-import shanai from "../assets/avatar-shanai.png";
+import data from "../data";
 
 export default class Testimonials extends Component {
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 2000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      className: "my-14",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+
     return (
-      <section className="mx-auto text-center py-[20px] mb-20">
-        <h2 className="text-primary-blue text-center pb-7 text-3xl font-bold">
+      <section className="mx-auto w-full text-center mb-20">
+        <h2 className="text-primary-blue text-center  text-4xl font-bold">
           What they've said ?
         </h2>
-        <Carousel
-          showThumbs={false}
-          showArrows={true}
-          showStatus={false}
-          showIndicators={true}
-          autoPlay={true}
-          interval={4000}
-          useKeyboardArrows={true}
-          infiniteLoop={true}
-          className=" my-10"
-        >
-          <div className="flex flex-row bg-primary gap-7">
-            {/* Ali */}
-            <div className="testimonial-card">
-              <div>
-                <img src={ali} alt="Ali" />
-              </div>
-              <h3>Anisha Li</h3>
-              <p>
-                “Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”
-              </p>
-            </div>
 
-            {/* Ali */}
-            <div className="testimonial-card">
-              <div className="relative">
-                <img src={ali} alt="Ali" />
+        <Slider {...settings}>
+          {data.map((testimonial, index) => {
+            return (
+              <div className="testimonial-card" key={index}>
+                <div className="testimonial-img">
+                  <img
+                    src={require("../assets/" + testimonial.avatar + ".png")}
+                    alt={testimonial.name}
+                  />
+                </div>
+                <h3>{testimonial.name}</h3>
+                <p>{testimonial.testimonial}</p>
               </div>
-              <h3>Anisha Li</h3>
-              <p>
-                “Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”
-              </p>
-            </div>
-
-            {/* Ali */}
-            <div className="testimonial-card">
-              <div>
-                <img src={ali} alt="Ali" />
-              </div>
-              <h3>Anisha Li</h3>
-              <p>
-                “Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”
-              </p>
-            </div>
-          </div>
-        </Carousel>
+            );
+          })}
+        </Slider>
         <button className="btn-red">Get Started</button>
       </section>
     );
