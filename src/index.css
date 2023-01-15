@@ -56,11 +56,15 @@ li {
 }
 
 .testimonial-card {
-  @apply flex flex-col items-center relative bg-neutral-gray rounded py-14 px-8 mx-3;
+  @apply flex flex-col items-center /*relative*/ bg-neutral-gray rounded py-10 px-8 mx-3;
 }
 
 .testimonial-img {
-  @apply absolute -top-10 left-1/2 translate-x-[-50%] w-20;
+  @apply /*absolute -top-10 left-1/2 translate-x-[-50%]*/  flex justify-center !important;
+}
+
+.testimonial-img img {
+  @apply w-20 mb-2;
 }
 
 .testimonial-card p {
@@ -74,6 +78,10 @@ li {
 /* editing carousel */
 .slick-list {
   @apply overflow-visible my-0 -mx-10 lg:-mx-20 !important;
+}
+
+.slick-initialized {
+  @apply overflow-hidden;
 }
 
 .slick-slide > div {
