@@ -10,6 +10,21 @@
   @apply font-font;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-red;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-red;
+}
+
 body {
   background: url("./assets/bg-tablet-pattern.svg") no-repeat top -150px right -150px;
   overflow-x: hidden;
@@ -48,7 +63,7 @@ li {
 }
 
 .about-title {
-  @apply font-bold text-primary-blue text-[16px];
+  @apply font-bold text-primary-blue text-[16px] lg:mb-4;
 }
 
 .about-number {

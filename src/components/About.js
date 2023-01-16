@@ -4,7 +4,7 @@ import Testimonials from "./Testimonials";
 const About = () => {
   return (
     <section className="about">
-      <div className="py-20 mx-auto w-10/12 gap-[50px] lg:gap-[200px] flex flex-col lg:flex-row">
+      <div className="py-20 mx-auto w-11/12 md:w-10/12 gap-[50px] lg:gap-[200px] flex flex-col lg:flex-row">
         <div className="text-center lg:text-left">
           <h2 className="text-primary-blue pb-7 text-4xl font-bold">
             What's different about Manage ?

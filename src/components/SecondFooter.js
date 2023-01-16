@@ -10,7 +10,7 @@ const SecondFooter = () => {
   return (
     <div className="bg-neutral-dark-blue py-10">
       <div className="mx-auto w-10/12 gap-10 flex flex-col-reverse sm:flex-row justify-between">
-        <div className=" flex flex-col-reverse gap-10 md:flex-col justify-between">
+        <div className="flex flex-col-reverse gap-10 md:flex-col justify-between">
           <img src={manage} alt="manage" className="" />
 
           <ul className="flex justify-between gap-1">
